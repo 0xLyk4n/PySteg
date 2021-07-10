@@ -1,5 +1,6 @@
+# PySteg
 
-# Overview
+## Overview
 
 Image steganography is the process of hiding information within an image. This program is utilized to hide a text based message within an image. 
 
