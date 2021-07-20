@@ -6,7 +6,7 @@ Image steganography is the process of hiding information within an image. This p
 
 ## How-To
 
-Just load up `PySteg.py` and execute it.
+Just load up `PySteg.py` and execute it. Make 3 directories, `/encrypt`, `/decrypt`, `/export` in the same directory where `PySteg.py` is located.
 - Place any PNG image you want to encrypt a message inside the `/encrypt` directory.
 - Place any PNG image you want to decrypt a message inside the `/decrypt` directory.
 - Any image encrypted with the program will be replicated and saved into the `/export` directory.
