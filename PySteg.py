@@ -92,7 +92,7 @@ def encodeMessage(image, msg, fileName):
     pixels[row-1, column-1] = tuple(newPixel)
     image.save("./export/" + fileName)
 
-
+#Function for decoding the message
 def decodeMessage(image):
     pixels = image.load()
     encodedText = ""
