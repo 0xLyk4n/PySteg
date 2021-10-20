@@ -138,3 +138,4 @@ if __name__== "__main__":
                             print("Message too long to encode in [" + file + "]")
             print("\nFinished Encoding images.")
 
+#end of script
