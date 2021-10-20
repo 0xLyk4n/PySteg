@@ -1,10 +1,11 @@
 #import ImageTK module from Pillow library
 from PIL import ImageTk, Image
 import math #import math module
-import os
+import os #import os
 
 # Only works with PNG images due to JPG compression issues messing up the message
 # Function to encode the secret message
+# A python program to encode a secret message
 def encodeMessage(image, msg, fileName):
     msg = "." + msg
     width, height = image.size
@@ -107,6 +108,7 @@ def decodeMessage(image):
                 encodedText+=chr(encodedChar)
     return encodedText
 
+#main func
 if __name__== "__main__":
     while True:
         choice = input("Decode or encrypt? (d/e): ")
@@ -138,3 +140,4 @@ if __name__== "__main__":
                             print("Message too long to encode in [" + file + "]")
             print("\nFinished Encoding images.")
 
+#end of script
