@@ -1,3 +1,4 @@
+#import ImageTK module from Pillow library
 from PIL import ImageTk, Image
 import math
 import os
