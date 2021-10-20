@@ -1,7 +1,7 @@
 #import ImageTK module from Pillow library
 from PIL import ImageTk, Image
 import math
-import os
+import os #import os
 
 # Only works with PNG images due to JPG compression issues messing up the message
 # Function to encode the secret message
