@@ -1,6 +1,6 @@
 #import ImageTK module from Pillow library
 from PIL import ImageTk, Image
-import math
+import math #import math module
 import os #import os
 
 # Only works with PNG images due to JPG compression issues messing up the message
