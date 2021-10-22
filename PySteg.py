@@ -95,6 +95,7 @@ def encodeMessage(image, msg, fileName):
     image.save("./export/" + fileName)
 
 #Function for decoding the message
+#decodeMessage()
 def decodeMessage(image):
     pixels = image.load()
     encodedText = ""
