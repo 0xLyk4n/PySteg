@@ -142,3 +142,4 @@ if __name__== "__main__":
             print("\nFinished Encoding images.")
 
 #end of script
+#EOF
