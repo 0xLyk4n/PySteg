@@ -109,6 +109,7 @@ def decodeMessage(image):
                 encodedText+=chr(encodedChar)
     return encodedText
 
+#~
 #main func
 if __name__== "__main__":
     while True:
