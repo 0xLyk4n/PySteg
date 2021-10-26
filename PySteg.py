@@ -6,6 +6,7 @@ import os #import os
 # Only works with PNG images due to JPG compression issues messing up the message
 # Function to encode the secret message
 # A python program to encode a secret message
+# image stegnography project
 def encodeMessage(image, msg, fileName):
     msg = "." + msg
     width, height = image.size
