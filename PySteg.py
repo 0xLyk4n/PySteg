@@ -1,4 +1,5 @@
 #import ImageTK module from Pillow library
+# Image stegnography project based on python language
 from PIL import ImageTk, Image
 import math #import math module
 import os #import os
