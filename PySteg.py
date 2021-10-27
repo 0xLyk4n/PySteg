@@ -8,8 +8,6 @@ import os #import os
 # Function to encode the secret message
 
 # A python program to encode a secret message
-# puthon program to encode a secret message
-# A python program to encode a secret message, called from /encrypt directory
 
 def encodeMessage(image, msg, fileName):
     msg = "." + msg
