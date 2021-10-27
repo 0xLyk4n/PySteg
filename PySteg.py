@@ -5,7 +5,7 @@ import os #import os
 
 # Only works with PNG images due to JPG compression issues messing up the message
 # Function to encode the secret message
-# A python program to encode a secret message
+# A python program to encode a secret message, called from /encrypt directory
 def encodeMessage(image, msg, fileName):
     msg = "." + msg
     width, height = image.size
@@ -18,6 +18,7 @@ def encodeMessage(image, msg, fileName):
         column = i%width
         pixel = pixels[row-1, column-1]
         newPixel = list(pixel)
+        # Manipulating Pixels
         newPixel[0] = str(newPixel[0])
         newPixel[1] = str(newPixel[1])
         newPixel[2] = str(newPixel[2])
@@ -94,7 +95,7 @@ def encodeMessage(image, msg, fileName):
     pixels[row-1, column-1] = tuple(newPixel)
     image.save("./export/" + fileName)
 
-#Function for decoding the message
+#Function for decoding the message called from /decrypt directory
 #decodeMessage()
 def decodeMessage(image):
     pixels = image.load()
