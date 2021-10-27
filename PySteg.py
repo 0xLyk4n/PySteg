@@ -6,7 +6,11 @@ import os #import os
 
 # Only works with PNG images due to JPG compression issues messing up the message
 # Function to encode the secret message
+
+# A python program to encode a secret message
+# puthon program to encode a secret message
 # A python program to encode a secret message, called from /encrypt directory
+
 def encodeMessage(image, msg, fileName):
     msg = "." + msg
     width, height = image.size
