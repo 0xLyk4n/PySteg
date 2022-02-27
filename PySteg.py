@@ -1,13 +1,8 @@
-#import ImageTK module from Pillow library
-# Image stegnography project based on python language
+
 from PIL import ImageTk, Image
-import math #import math module
-import os #import os
+import math 
+import os
 
-# Only works with PNG images due to JPG compression issues messing up the message
-# Function to encode the secret message
-
-# A python program to encode a secret message
 
 def encodeMessage(image, msg, fileName):
     msg = "." + msg
@@ -98,8 +93,6 @@ def encodeMessage(image, msg, fileName):
     pixels[row-1, column-1] = tuple(newPixel)
     image.save("./export/" + fileName)
 
-#Function for decoding the message called from /decrypt directory
-#decodeMessage()
 def decodeMessage(image):
     pixels = image.load()
     encodedText = ""
@@ -113,8 +106,6 @@ def decodeMessage(image):
                 encodedText+=chr(encodedChar)
     return encodedText
 
-#~
-#main func
 if __name__== "__main__":
     while True:
         choice = input("Decode or encrypt? (d/e): ")
@@ -146,6 +137,3 @@ if __name__== "__main__":
                             print("Message too long to encode in [" + file + "]")
             print("\nFinished Encoding images.")
 
-#end of script
-#EOF
-#
